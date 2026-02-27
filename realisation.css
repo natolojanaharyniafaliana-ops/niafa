@@ -1,0 +1,146 @@
+
+#realisations {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: #f1f5f9;
+}
+
+#realisations h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #38bdf8;
+    position: relative;
+}
+
+#realisations .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#realisations .box {
+    background: #1e293b;
+    color: #f1f5f9;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    flex: 1 1 400px;
+    max-width: 450px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#realisations .box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+#realisations .box h3 {
+    color: #38bdf8;
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#realisations .box p {
+    color: #e5e7eb;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#realisations .box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #f1f5f9;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#realisations .box a:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+    transform: scale(1.05);
+}
+
+#realisations .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#realisations .box img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#realisations .zig-left { margin-right: auto; }
+#realisations .zig-right { margin-left: auto; }
+
+#realisations .box.hide {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+#realisations .box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+    #realisations .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #realisations .box {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #realisations h2 {
+        font-size: 28px;
+    }
+    #realisations .box h3 {
+        font-size: 20px;
+    }
+    #realisations .box a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+a {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+    color: chartreuse;
+}
+img {
+    width: 550px;
+    height: 550px;
+    border-radius: 150%;  
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+    object-fit: cover;  
+    transform: scale(0.8); 
+    transition: transform 0.3s; 
+}
+
+img:hover {
+    transform: scale(1);
+}
